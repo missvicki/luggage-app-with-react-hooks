@@ -1,0 +1,48 @@
+{
+  "extends": [
+    "airbnb",
+    "eslint-config-airbnb",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "prettier"],
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true,
+    "browser": true,
+    "commonjs": true,
+    "jest": true
+  },
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": false }],
+    "new-cap": 0,
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": 0,
+    "no-plusplus": 0,
+    "no-unused-expressions": 0,
+    "import/no-named-as-default": 0,
+    "consistent-return": 0,
+    "prefer-destructuring": 0,
+    "no-shadow": 0,
+    "array-callback-return": 0,
+    "no-underscore-dangle": 0,
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "react/prop-types": 0,
+    "react/destructuring-assignment": 0,
+    "jsx-a11y/control-has-associated-label": 0,
+    "react/state-in-constructor": 0,
+    "react/static-property-placement": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-curly-newline": 0
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}
