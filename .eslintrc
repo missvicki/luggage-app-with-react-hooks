@@ -5,7 +5,7 @@
     "plugin:react/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["react", "prettier"],
+  "plugins": ["react"],
   "env": {
     "node": true,
     "es6": true,
@@ -15,7 +15,6 @@
     "jest": true
   },
   "rules": {
-    "prettier/prettier": ["error", { "singleQuote": false }],
     "new-cap": 0,
     "import/prefer-default-export": "off",
     "import/no-unresolved": 0,
@@ -27,6 +26,7 @@
     "no-shadow": 0,
     "array-callback-return": 0,
     "no-underscore-dangle": 0,
+    "react/jsx-one-expression-per-line": 0,
     "react/jsx-filename-extension": [
       1,
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
@@ -37,7 +37,8 @@
     "react/state-in-constructor": 0,
     "react/static-property-placement": 0,
     "react/jsx-props-no-spreading": 0,
-    "react/jsx-curly-newline": 0
+    "react/jsx-curly-newline": 0,
+    "react/button-has-type": 0
   },
   "settings": {
     "react": {
