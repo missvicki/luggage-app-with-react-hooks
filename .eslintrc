@@ -39,7 +39,8 @@
     "react/jsx-props-no-spreading": 0,
     "react/jsx-curly-newline": 0,
     "react/button-has-type": 0,
-    "jsx-a11y/label-has-associated-control": 0
+    "jsx-a11y/label-has-associated-control": 0,
+    "prefer-const": 0
   },
   "settings": {
     "react": {
