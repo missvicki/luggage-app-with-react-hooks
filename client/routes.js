@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 import App from "./login";
+import BusComponent from "./buses";
 
 const Routes = () => (
   <BrowserRouter>
@@ -10,7 +11,7 @@ const Routes = () => (
       <ToastContainer />
       <Switch>
         <Route exact path="/" component={App} />
-        <Route path="/landingPage" />
+        <Route exact path="/" component={BusComponent} />
       </Switch>
     </div>
   </BrowserRouter>

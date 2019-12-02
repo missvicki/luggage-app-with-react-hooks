@@ -3,7 +3,7 @@ import { Trips } from "../models/trips";
 import responseCodes from "../constants/responseCodes";
 import responseMessages from "../constants/responseMessages";
 import status from "../constants/status";
-import { filterTrips } from "../utils/helpers/filter";
+// import { filterTrips } from "../utils/helpers/filter";
 
 export const create = async (req, res) => {
   const {
@@ -83,7 +83,7 @@ export const list = async (req, res) => {
     return res.status(responseCodes.OK).json({
       message: responseMessages.TRIPS_FOUND,
       status: status.SUCCESS,
-      data: { trips: trips }
+      data: { trips }
     });
   } catch (error) {
     return res.json({
@@ -204,12 +204,11 @@ export const edit = async (req, res) => {
         status: status.SUCCESS,
         data: { trips: trip }
       });
-    } else {
-      return res.status(responseCodes.FORBIDDEN).json({
-        message: responseMessages.FORBIDDEN,
-        status: status.ERROR
-      });
     }
+    return res.status(responseCodes.FORBIDDEN).json({
+      message: responseMessages.FORBIDDEN,
+      status: status.ERROR
+    });
   } catch (error) {
     return res.json({
       message: responseMessages.INTERNAL_SERVER_ERROR,
