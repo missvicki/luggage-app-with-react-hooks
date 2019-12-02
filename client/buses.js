@@ -70,12 +70,13 @@ const BusComponent = () => {
     await axios
       .get("http://localhost:4000/api/v1/trips")
       .then(response => {
+        successToast(response.data.message);
         const data = response.data.data.trips;
         setLoading(false);
         setBuses(data);
       })
       .catch(error => {
-        dangerToast(error.response);
+        dangerToast(error.response.data.message);
       });
   };
 
