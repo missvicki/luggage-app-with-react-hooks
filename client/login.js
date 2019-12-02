@@ -16,7 +16,7 @@ const App = props => {
         setLoading(false);
         successToast(response.data.message);
         localStorage.setItem("token", response.data.access_token);
-        payload.history.push("/landingPage");
+        payload.history.push("/home");
       })
       .catch(error => {
         setLoading(false);
