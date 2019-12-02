@@ -10,7 +10,7 @@ const Routes = () => (
     <div>
       <ToastContainer />
       <Switch>
-        {/* <Route exact path="/" component={App} /> */}
+        <Route exact path="/" component={App} />
         <Route exact path="/" component={BusComponent} />
       </Switch>
     </div>
